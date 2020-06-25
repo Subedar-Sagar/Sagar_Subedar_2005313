@@ -5,9 +5,16 @@ void main()
 {
   int i,fact=1;
   int num=5;
-  for(i=1;i<=num;i++)
+  if(num<=1)
   {
-    fact=fact*i;
+    fact=1;
   }
-  printf("factorial of %d is %d",num,fact);
+  else
+  {
+    for(i=1;i<=num;i++)
+      {
+        fact=fact*i;
+      }
+  }
+ printf("factorial of %d is %d",num,fact);
 }
